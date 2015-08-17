@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******* /General *******/
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	background:#CCC;
+	font-size:100%;
+	color:#000;
+	font-family: 'Poiret One', cursive;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+h1{ 
+	font-size:3em;
+	font-weight:1000;
+}
+
+h2{ 
+	font-family: 'Poiret One', cursive;
+	font-size:2.2em;
+	font-weight:800;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+}
+
+h3{ 
+	font-family: 'Poiret One', cursive;
+	font-size:1.4em;
+	font-weight:800;
+}
+
+p{
+	font-family: 'Poiret One', cursive;
+	font-weight:800;
+}
+
+a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+/******* /Main *******/
+#wrapper{
+	width:50%;
+	margin:auto;
+	margin-top:20px;
+	min-height:100%;
+	height:auto;
+	position:relative;
+}
+.slidecontainer{
+	background-color:#F00;
+	height:700px;
+}
+
+.catcontainer{
+	width:auto;
+	margin:auto;
+}
+
+.cat{
+	width:50%;
+	margin:auto;
+	float:left;
+	background-color:#FF0;
+	height:10em;
+}
+
+.catdesc{
+	
+}
+
+.eventheader{
+	min-width:70%;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+
+#eventwrapper{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:80px;
+}
+
+.eventblock{
+	min-width:200px;
+	width:66%;
+	min-height:350px;
+	height:auto;
+	background-color:#FFF;
+	background: rgba(255, 255, 255, 0.6);
+	float:left;
+	margin-right:10px;
+	padding:5px;
+	border-radius:2px;
+}
+
+.eventdetailcont{
+	min-width:200px;
+	width:30%;
+	min-height:500px;
+	height:auto;
+	background-color:#FFF;
+	background: rgba(255, 255, 255, 0.6);
+	float:left;
+	padding:5px;
+	border-radius:2px;
+}
+
+.eventimg{
+	width:100%;
+	height:auto;
+}
+
+.eventimg img{
+	width:100%;
+}
+
+.eventdetail{
+	width:100%;
+	max-width:95%;
+	padding:5px;
+	height:auto;
+}
+
+.eventdetail ul{
+	list-style:none;
+	padding:0.1em 0.2em 0 0.2em;
+}
+
+.eventdetail li{
+	padding:10px 0 10px 0;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+.eventdetail a{
+	padding:10px 0 10px 0;
+	font-size:1.1em;
+	font-weight:600;
+	color:#000;
+}
+
+.eventcrumb{
+	height:auto;
+	width:auto;	
+}
+
+#crumblist{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#crumblist a{
+	color:#00a8ef;
+	font-weight:800;
+}
+
+#crumblist li{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+#crumblist li:before{ 
+	content: "> "; 
+}
+
+#crumblist li:first-child:before{
+	content: ""; 
+}
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #crumblist li
+{
+background-image: url("images/gt.gif");
+background-repeat: no-repeat;
+background-position: 0 50%;
+padding: 0 0.5em 0 1em;
+margin: 0 1em 0 -1em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #crumblist { height: 1%; }
+
+* html #crumblist li
+{
+display: block;
+float: left;
+}
+
+
+
+/******* /Slider *******/
+
+
+/******* /Header *******/
+.header{
+	height:5em;
+	width:100%;
+}
+
+#headleft{
+	float: left;
+  	width: auto;
+	margin:0 10px 0 10px;
+	padding:0 0.2em 0 0.4em;
+}
+
+#headright{
+	margin:10px;
+	padding:0 0.2em 0 0.4em;
+	text-align: center;
+	float: right;
+	min-width:500px;
+	width:auto;
+}
+
+.headtitle{
+	float:left;
+}
+
+.headlogo{
+	background-image:url(../images/tuos_logo.png);
+	background-repeat:no-repeat;
+	background-size:200px 98px;
+	background-position:right center;
+	width:200px;
+	height:98px;
+	float:left;
+	margin:10px;
+}
+
+.headlogo:hover{
+	background-image:url(../images/tuos_logo_hover.png);
+	background-repeat:no-repeat;
+	background-size:200px 98px;
+	background-position:right center;
+	width:200px;
+	height:98px;
+	float:left;
+	margin:10px;
+}
+
+/******* /Nav *******/
+.nav{
+	padding:.2em 0;
+	margin:0;
+	list-style-type: none;
+	background-color:#333;
+	color:#FFF;
+	width:100%;
+	text-align:center;
+	font-size:1.6em;
+	font-family: 'Poiret One', cursive;
+}
+
+.nav a{
+	border-right: 2px solid #fff;
+	padding:0 0.4em 0 0.2em;
+}
+
+.nav a:hover{
+	text-decoration: none;
+	color:#CCC;
+}
+
+/******* /Content *******/
+/** /Mailslider **/
+#panel, #slide{
+    padding: 5px;
+    text-align: center;
+}
+
+.panel, #slide a{
+	font-size:1.4em;
+	font-weight:800;
+	font-family: 'Poiret One', cursive;
+	margin:0;
+	color:#000;
+}
+
+#panel{
+    padding: 10px;
+    display: none;
+}
+
+#panel a{
+	color:#00a8ef;
+	font-weight:800;
+}
+
+label{
+	display:block;
+}
+
+.forminput{
+	border-radius:5px;
+	font-size:1.2em;
+}
+
+.submitlink {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'Poiret One', cursive;
+	font-size:1.6em;
+	font-weight:700;
+	margin:auto;
+	color:#000;
+}
+/******* /Footer *******/
+.footerwrap{
+	width:100%;
+	background-color:#333;
+	min-height:2em;
+	position:fixed;
+	bottom:40px;
+}
+
+.foottop{
+	width:auto;
+	margin:auto;
+	padding:.2em 0;
+	margin:0;
+}
+
+.foottop li{
+	list-style:none;
+	display:inline;
+	padding:0 0.4em 0 0.2em;
+	border-right: 1px solid #fff;
+}
+
+.footright{
+	position:absolute;
+	right:20px;
+	width:auto;
+}
+
+.footright p{
+	font-size:0.8em;
+	font-family: 'Poiret One', cursive;
+	color:#000;
+}
+.footright a{
+	color:#00a8ef;
+}
