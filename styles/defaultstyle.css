@@ -355,14 +355,14 @@ label{
 	display:block;
 }
 
-.forminput{
+.formfield{
 	border-radius:5px;
 	font-size:0.8em;
 	min-width:200px;
 	width:90%;
 }
 
-.submitlink {
+.submitbutton {
 	background-color: transparent;
 	text-decoration: none;
 	border: none;
