@@ -330,6 +330,57 @@ label{
 	margin:auto;
 	color:#000;
 }
+
+/******* /Contact *******/
+.contactdesc{
+	margin-left:40px;
+}
+
+.required{
+	font-family: 'Poiret One', cursive;
+	font-size:1.6em;
+	font-weight:800;
+	color:#000;
+}
+
+textarea{
+	min-width:200px;
+	width:90%;
+	min-height:200px; 
+	resize:vertical; 
+	wrap:virtual;
+}
+
+label{
+	display:block;
+}
+
+.forminput{
+	border-radius:5px;
+	font-size:0.8em;
+	min-width:200px;
+	width:90%;
+}
+
+.submitlink {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'Poiret One', cursive;
+	font-size:1.6em;
+	font-weight:800;
+	margin:auto;
+	color:#000;
+}
+
+.sendform{
+	font-family: 'Poiret One', cursive;
+	font-size:1.6em;
+	font-weight:800;
+	margin:auto;
+}
+
 /******* /Footer *******/
 .footerwrap{
 	width:100%;
