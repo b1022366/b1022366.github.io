@@ -26,14 +26,12 @@ $(document).ready(function(){
 });
 </script>
 <!-- Slider javascript End -->
-<!-- HomeSlide javascript -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="jscript/responsiveslides.min.js"></script>
-<!-- HomeSlide javascript End -->
+
 </head>
 
 <body onload="set_style_from_cookie()">
 	<div id="container">
+<!-- Header Content -->
             <header class="header">
                 <div id="headleft">
                     <div class="headtitle">
@@ -57,7 +55,9 @@ $(document).ready(function(){
                     </div>
                  </div>
             </header>
+            
         <br style="clear:both" />
+<!-- Main Navigation -->
             <nav class="nav">
                 <a href="index.html">Events Home</a>
                 <a href="calendar.html">Event Calendar</a> 
@@ -65,84 +65,35 @@ $(document).ready(function(){
                 <a href="visinfo.html">Visitors Infomation</a> 
                 <a href="contact.html">Contact Us</a>
             </nav>
-        <br style="clear:both" /> 
+<!-- Main Content -->
           
             <main>
                 <div id="wrapper">
-                    <div class="slidecontainer">
-							<script>
-                              $(function() {
-                                $(".rslides").responsiveSlides();
-                              });
-                            </script>
-                        <ul class="rslides">
-                          <li><a href=""><img src="images/1.jpg" alt=""></a></li>
-                          <li><img src="images/1.jpg" alt=""></li>
-                          <li><img src="images/1.jpg" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="catcontainer">
-                        <div class="cat">
-                        	<div class="catimg">
-                        <img src="images/homedrama.jpg">
-                        	</div>
-                        	<div class="catdecleft1">
-                            	<h3>Drama and Films</h3>
-                            	<p>Isn't it great when you just need a simple slider? How about when the design needs captions in random places, Reeeeaaallllyyyy slooowwwww speeds or an annoying pop-up each time you change slide? Yeah, not so great.
-
-Slippry offers a heap of settings you actually need, and with the included CSS and Sass you can make Slippry look just how you need it.</p>
-                            <div class="catlink">
-                            	<a href="#">See All...</a>
-                            </div>
+                		<div class="eventheader">
+                        	<h2>Events Calendar</h2>
+                            <div class="eventcrumb">
+                            	<ul id="crumblist">
+                                    <li id="active"><a href="Calendar.html" id="current">Events Home</a></li>
+                                    <li><a href="#">Events Calendar</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="cat">
-                        	<div class="catimg">
-                            	<img src="images/homemusic.jpg">
+                        
+                        <div id="eventwrapper">
+                            <div class="eventblock">
+                            	
                             </div>
-                        	<div class="catdecright2">
-                            <h3>Music and Entertainment</h3>
-                            	<p>Isn't it great when you just need a simple slider? How about when the design needs captions in random places, Reeeeaaallllyyyy slooowwwww speeds or an annoying pop-up each time you change slide? Yeah, not so great.
-
-Slippry offers a heap of settings you actually need, and with the included CSS and Sass you can make Slippry look just how you need it.</p>
-							<div class="catlink">
-                            	<a href="#">See All...</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="cat">
-                            <div class="catimg">
-                            	<img src="images/homeopenday.jpg">
-                        	</div>
-                        	<div class="catdecleft3">
-                            <h3>Open Days, Exhibitions and Family Events</h3>
-                            	<p>Isn't it great when you just need a simple slider? How about when the design needs captions in random places, Reeeeaaallllyyyy slooowwwww speeds or an annoying pop-up each time you change slide? Yeah, not so great.
-
-Slippry offers a heap of settings you actually need, and with the included CSS and Sass you can make Slippry look just how you need it.</p>
-                            <div class="catlink">
-                            	<a href="#">See All...</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="cat">
-                        	<div class="catimg">
-                        		<img src="images/homelecture.jpg">
-                        	</div>
-                        	<div class="catdecright4">
-                            <h3>Lectures, Seminars and Conferences</h3>
-                            	<p>Isn't it great when you just need a simple slider? How about when the design needs captions in random places, Reeeeaaallllyyyy slooowwwww speeds or an annoying pop-up each time you change slide? Yeah, not so great.
-
-Slippry offers a heap of settings you actually need, and with the included CSS and Sass you can make Slippry look just how you need it.</p>
-                            <div class="catlink">
-                            	<a href="#">See All...</a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
+                     
+                          <div class="eventdetailcont">
+                              <div class="eventdetail">
+                              		<p>The calendar page lists event in a easy to read format choosing between weekly, monthly and yearly views.</p>
+                              </div>
+                          </div>       
                 </div>
             </main>
             
-        <br style="clear:both" />    
+        <br style="clear:both" /> 
+<!-- Footer Content -->  
             <footer class="footerwrap">
                 <div class="foottop">
                         <ul>
@@ -163,6 +114,7 @@ Slippry offers a heap of settings you actually need, and with the included CSS a
                             </div>
                         </ul>
                 </div>
+<!-- Font Change Script -->
                 <script type="text/javascript">
 					function toggle_text(shown, hidden) {
 						   var e = document.getElementById(shown);
