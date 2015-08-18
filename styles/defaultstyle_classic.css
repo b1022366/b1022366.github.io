@@ -9,7 +9,7 @@ body{
 	background:#CCC;
 	font-size:100%;
 	color:#000;
-	font-family:Verdana, Geneva, sans-serif;
+	font-family:"MS Serif", "New York", serif;
 }
 
 #container {
@@ -19,26 +19,34 @@ body{
 
 h1{ 
 	font-size:3em;
+	font-weight:1000;
 }
 
 h2{ 
-	font-family:mainfont;
-	font-size:;
+	font-family:"MS Serif", "New York", serif;
+	font-size:2.2em;
+	font-weight:800;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
 }
 
 h3{ 
-	font-family:mainfont;
-	font-size:;
+	font-family:"MS Serif", "New York", serif;
+	font-size:1.4em;
+	font-weight:800;
+	color:#FFF;
 }
 
 p{
-	font-family:mainfont;
+	font-family:"MS Serif", "New York", serif;
 	font-weight:800;
 }
 
 a{
 	color:#FFF;
 	text-decoration:none;
+	font-weight:500;
 }
 
 a:hover{
@@ -47,35 +55,278 @@ a:hover{
 
 
 /******* /Main *******/
+main{
+	position:absolute;
+	width:100%;
+}
+
 #wrapper{
 	width:50%;
 	margin:auto;
-	min-height:100%;
-	height:100%;
+	margin-top:10px;
+	height:auto;
+	position:relative;
 }
-.slidecontainer{
-	background-color:#F00;
-	height:700px;
+.topcontainer{
+	min-width:200px;
+	width:100%;
+	height:auto;
+	margin-top:10px;
 }
 
 .catcontainer{
 	width:auto;
 	margin:auto;
+	position:relative;
+	top:30px;
 }
 
 .cat{
-	width:50%;
+	min-width:200px;
+	width:100%;
+	min-height:300px;
+	height:auto;
 	margin:auto;
+	margin:20px 0 20px 0;
+	position:relative;
+	top:0;
+}
+
+.catimg{
+	width:100%;
+	height:auto;
+}
+
+.catimg img{
+	width:100%;
+}
+		
+.cat p{
+	color:#FFF;
+}
+
+.catdecleft1{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+	border-left:5px solid #90C;
+}
+
+.catdecright2{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+	border-right:5px solid #0F0;
+}
+
+.catdecleft3{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+	border-left:5px solid #FF0;
+}
+
+.catdecright4{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+	border-right:5px solid #0F0;
+}
+.catdecleft1:hover{
+	border-left:10px solid #90C;
+	background:rgba(0, 0, 0, 0.9);
+}
+
+.catdecright2:hover{
+	border-right:10px solid #0F0;
+	background:rgba(0, 0, 0, 0.9);
+}
+
+.catdecleft3:hover{
+	border-left:10px solid #FF0;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.catdecright4:hover{
+	border-right:10px solid #F00;
+	background:rgba(0, 0, 0, 0.9);
+}
+
+.catlink{
+	position:absolute;
+	bottom:20px;
+	right:30px;
+	padding:5px;
+}
+
+.catlink a{
+	color:#00a8ef;
+	font-weight:800
+}
+
+.eventheader{
+	min-width:70%;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+
+#eventwrapper{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:80px;
+}
+
+.eventblock{
+	min-width:100px;
+	width:60%;
+	min-height:200px;
+	height:auto;
+	background-color:#FFF;
+	background: rgba(255, 255, 255, 0.6);
 	float:left;
-	background-color:#FF0;
-	height:10em;
+	padding:5px;
+	border-radius:2px;
 }
 
-.catdesc{
-	
+.eventblock h3{
+	color:#000;
 }
 
-/******* /Slider *******/
+.eventdetailcont{
+	min-width:100px;
+	width:35%;
+	height:auto;
+	background-color:#FFF;
+	background: rgba(255, 255, 255, 0.6);
+	float:left;
+	padding:5px;
+	border-radius:2px;
+}
+
+.eventspacer{
+	float:left;
+	width:10px;
+	height:1px;
+}
+
+.eventimg{
+	width:100%;
+	height:auto;
+}
+
+.eventimg img{
+	width:100%;
+}
+
+.eventdetail{
+	width:100%;
+	max-width:95%;
+	padding:5px;
+	height:auto;
+}
+
+.eventdetail ul{
+	list-style:none;
+	padding:0.1em 0.2em 0 0.2em;
+}
+
+.eventdetail li{
+	padding:10px 0 10px 0;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+.eventdetail a{
+	padding:10px 0 10px 0;
+	font-size:1.1em;
+	font-weight:600;
+	color:#000;
+	word-wrap: break-word;
+}
+
+.eventcrumb{
+	height:auto;
+	width:auto;	
+}
+
+#crumblist{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#crumblist a{
+	color:#00a8ef;
+	font-weight:800;
+}
+
+#crumblist li{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+#crumblist li:before{ 
+	content: "> "; 
+}
+
+#crumblist li:first-child:before{
+	content: ""; 
+}
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #crumblist li
+{
+background-image: url("images/gt.gif");
+background-repeat: no-repeat;
+background-position: 0 50%;
+padding: 0 0.5em 0 1em;
+margin: 0 1em 0 -1em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #crumblist { height: 1%; }
+
+* html #crumblist li
+{
+display: block;
+float: left;
+}
+
 
 /******* /Header *******/
 .header{
@@ -104,7 +355,7 @@ a:hover{
 }
 
 .headlogo{
-	background-image:url(images/tuos_logo.png);
+	background-image:url(../images/tuos_logo.png);
 	background-repeat:no-repeat;
 	background-size:200px 98px;
 	background-position:right center;
@@ -115,7 +366,7 @@ a:hover{
 }
 
 .headlogo:hover{
-	background-image:url(images/tuos_logo_hover.png);
+	background-image:url(../images/tuos_logo_hover.png);
 	background-repeat:no-repeat;
 	background-size:200px 98px;
 	background-position:right center;
@@ -135,7 +386,7 @@ a:hover{
 	width:100%;
 	text-align:center;
 	font-size:1.6em;
-	font-family: 'Poiret One', cursive;
+	font-family:"MS Serif", "New York", serif;
 }
 
 .nav a{
@@ -158,7 +409,7 @@ a:hover{
 .panel, #slide a{
 	font-size:1.4em;
 	font-weight:800;
-	font-family: 'Poiret One', cursive;
+	font-family:"MS Serif", "New York", serif;
 	margin:0;
 	color:#000;
 }
@@ -187,19 +438,107 @@ label{
 	text-decoration: none;
 	border: none;
 	cursor: pointer;
-	font-family: 'Poiret One', cursive;
+	font-family:"MS Serif", "New York", serif;
 	font-size:1.6em;
 	font-weight:700;
 	margin:auto;
 	color:#000;
 }
+
+/******* /Slider *******/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+/******* /Contact *******/
+.contactdesc{
+	margin-left:40px;
+}
+
+.required{
+	font-family:"MS Serif", "New York", serif;
+	font-size:1.6em;
+	font-weight:800;
+	color:#000;
+}
+
+textarea{
+	min-width:200px;
+	width:90%;
+	min-height:200px; 
+	resize:vertical; 
+	wrap:virtual;
+}
+
+label{
+	display:block;
+}
+
+.formfield{
+	border-radius:5px;
+	font-size:0.8em;
+	min-width:200px;
+	width:90%;
+}
+
+.submitbutton {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	font-family:"MS Serif", "New York", serif;
+	font-size:1.6em;
+	font-weight:800;
+	margin:auto;
+	color:#000;
+}
+
+.sendform{
+	font-family:"MS Serif", "New York", serif;
+	font-size:1.6em;
+	font-weight:800;
+	margin:auto;
+}
+
 /******* /Footer *******/
-.footerwrap{
+
+footer{
+	position:relative;
+	bottom:0;
+	width:100%;
+}
+
+#footerwrap{
 	width:100%;
 	background-color:#333;
-	min-height:2em;
-	position:absolute;
-	bottom:0;
+	height:auto;
 }
 
 .foottop{
@@ -224,7 +563,7 @@ label{
 
 .footright p{
 	font-size:0.8em;
-	font-family: 'Poiret One', cursive;
+	font-family:"MS Serif", "New York", serif;
 	color:#000;
 }
 .footright a{
