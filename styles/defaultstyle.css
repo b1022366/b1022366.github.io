@@ -55,19 +55,23 @@ a:hover{
 
 
 /******* /Main *******/
+main{
+	position:absolute;
+	width:100%;
+}
+
 #wrapper{
 	width:50%;
 	margin:auto;
-	margin-top:20px;
-	min-height:100%;
+	margin-top:10px;
 	height:auto;
 	position:relative;
 }
-.slidecontainer{
+.topcontainer{
 	min-width:200px;
 	width:100%;
 	height:auto;
-	background-color:#F00;
+	margin-top:10px;
 }
 
 .catcontainer{
@@ -83,7 +87,7 @@ a:hover{
 	min-height:300px;
 	height:auto;
 	margin:auto;
-	margin-top:40px;
+	margin:20px 0 20px 0;
 	position:relative;
 	top:0;
 }
@@ -118,8 +122,8 @@ a:hover{
 .catdecright2{
 	min-width:120px;
 	width:40%;
-	min-height:100%;
-	height:auto;
+	
+	height:90%;
 	position:absolute;
 	top:0;
 	right:0;
@@ -146,8 +150,8 @@ a:hover{
 .catdecright4{
 	min-width:120px;
 	width:40%;
-	min-height:100%;
-	height:100%;
+	
+	height:90%;
 	position:absolute;
 	top:0;
 	right:0;
@@ -206,28 +210,32 @@ a:hover{
 }
 
 .eventblock{
-	min-width:200px;
-	width:66%;
-	min-height:350px;
+	min-width:100px;
+	width:60%;
+	min-height:200px;
 	height:auto;
 	background-color:#FFF;
 	background: rgba(255, 255, 255, 0.6);
 	float:left;
-	margin-right:10px;
 	padding:5px;
 	border-radius:2px;
 }
 
 .eventdetailcont{
-	min-width:200px;
-	width:30%;
-	min-height:500px;
+	min-width:100px;
+	width:35%;
 	height:auto;
 	background-color:#FFF;
 	background: rgba(255, 255, 255, 0.6);
 	float:left;
 	padding:5px;
 	border-radius:2px;
+}
+
+.eventspacer{
+	float:left;
+	width:10px;
+	height:1px;
 }
 
 .eventimg{
@@ -262,6 +270,7 @@ a:hover{
 	font-size:1.1em;
 	font-weight:600;
 	color:#000;
+	word-wrap: break-word;
 }
 
 .eventcrumb{
@@ -477,6 +486,7 @@ label{
 }
 
 textarea{
+	min-width:200px;
 	width:90%;
 	min-height:200px; 
 	resize:vertical; 
@@ -490,6 +500,7 @@ label{
 .formfield{
 	border-radius:5px;
 	font-size:0.8em;
+	min-width:200px;
 	width:90%;
 }
 
@@ -513,12 +524,17 @@ label{
 }
 
 /******* /Footer *******/
-.footerwrap{
+
+footer{
+	position:relative;
+	bottom:0;
+	width:100%;
+}
+
+#footerwrap{
 	width:100%;
 	background-color:#333;
-	min-height:2em;
-	position:fixed;
-	bottom:0;
+	height:auto;
 }
 
 .foottop{

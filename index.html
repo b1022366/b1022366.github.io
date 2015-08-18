@@ -33,7 +33,7 @@ $(document).ready(function(){
 </head>
 
 <body onload="set_style_from_cookie()">
-	<div id="container">
+	
             <header class="header">
                 <div id="headleft">
                     <div class="headtitle">
@@ -70,7 +70,7 @@ $(document).ready(function(){
           
             <main>
                 <div id="wrapper">
-                    <div class="slidecontainer">
+                    <div class="topcontainer">
 							<script>
                               $(function() {
                                 $(".rslides").responsiveSlides();
@@ -79,8 +79,14 @@ $(document).ready(function(){
                         <ul class="rslides">
                           <li><a href="eventdetail.html"><img src="images/1.jpg" alt=""></a></li>
                           <li><img src="images/2.jpg" alt=""></li>
-                          <li><img src="images/1.jpg" alt=""></li>
+                          <li><a href="eventdetail.html"><img src="images/1.jpg" alt=""></a></li>
                         </ul>
+                    </div>
+                    <div class="topcontainer">
+                    	<h2>Welcome to What's On at The University of Sheffield</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus sem at enim semper maximus. Nam vel risus mauris. Sed bibendum, justo quis rhoncus ultricies, massa diam dictum metus, in sollicitudin dui dolor in augue. In mollis quam at luctus hendrerit. Nulla rhoncus quam ut justo dictum gravida. Morbi pulvinar nulla vel dui fermentum, nec posuere est laoreet. Aliquam sit amet tellus in lectus placerat pretium. Praesent odio dui, tempus eu quam sit amet, condimentum ultricies diam.
+
+Vivamus lacinia sapien in ex commodo malesuada. Aliquam eleifend ac elit vitae ullamcorper. Mauris et quam urna. Vivamus in cursus elit, vel posuere justo. Aenean posuere massa sed sodales aliquet. Nunc efficitur dolor a egestas mollis. Maecenas at laoreet quam. Proin scelerisque purus dictum nunc vulputate pulvinar. Nulla eget tortor id tortor luctus aliquet vel quis tellus. Curabitur vitae ligula hendrerit, posuere nulla quis, varius tortor.</p>
                     </div>
                     <div class="catcontainer">
                         <div class="cat">
@@ -144,47 +150,49 @@ Slippry offers a heap of settings you actually need, and with the included CSS a
             </main>
             
         <br style="clear:both" />    
-            <footer class="footerwrap">
-                <div class="foottop">
-                        <ul>
-                       		<li><a href="#">Contact</a></li>
-                            <li><a href="#">About/FAQ's</a></li>
-                        	<li><a href="#">Sitemap</a></li>
-                           	<li><a href="#">Careers</a></li>
-                         	<li><a href="#">Legal</a></li>
-                            <div id="shown_first" style="display:inline">
-                                  <a href="#" style="cursor:pointer" onclick="switch_style('classic'); toggle_text('shown_first', 'hidden_first');return false" name="theme" value="Classic Theme" id="classic">
-                                Change to Classic Font
-                                  </a>
-                    		</div>
-                            <div id="hidden_first" style="display:none">
-                            <a href="#" style="cursor:pointer" onclick="switch_style('white'); toggle_text('shown_first', 'hidden_first');return false" name="theme" value="Classic Theme" id="classic">
-                                 Change to Modern Font
-                                  </a>
-                            </div>
-                        </ul>
-                </div>
-                <script type="text/javascript">
-					function toggle_text(shown, hidden) {
-						   var e = document.getElementById(shown);
-						   var f = document.getElementById(hidden);
-						if(e.style.display == 'inline') {
-									  e.style.display = 'none';
-									  f.style.display = 'inline';
-						  }
-						  else {
-									  e.style.display = 'inline';
-									  f.style.display = 'none';
-						  }
-					}
-				</script>
-                    <div class="foot left">
-                        
-                </div>
-				<div class="footright">
-                   <p>Copyright &copy; 2015 <a href="http://csdesign.co.nf/">CS Design</a></p>
-                </div>
+            <footer>
+            	<div id="footerwrap">
+                    <div class="foottop">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About/FAQ's</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <div id="shown_first" style="display:inline">
+                                      <a href="#" style="cursor:pointer" onclick="switch_style('classic'); toggle_text('shown_first', 'hidden_first');return false" name="theme" value="Classic Theme" id="classic">
+                                    Change to Classic Font
+                                      </a>
+                                </div>
+                                <div id="hidden_first" style="display:none">
+                                <a href="#" style="cursor:pointer" onclick="switch_style('white'); toggle_text('shown_first', 'hidden_first');return false" name="theme" value="Classic Theme" id="classic">
+                                     Change to Modern Font
+                                      </a>
+                                </div>
+                            </ul>
+                    </div>
+                    <script type="text/javascript">
+                        function toggle_text(shown, hidden) {
+                               var e = document.getElementById(shown);
+                               var f = document.getElementById(hidden);
+                            if(e.style.display == 'inline') {
+                                          e.style.display = 'none';
+                                          f.style.display = 'inline';
+                              }
+                              else {
+                                          e.style.display = 'inline';
+                                          f.style.display = 'none';
+                              }
+                        }
+                    </script>
+                        <div class="foot left">
+                            
+                    </div>
+                    <div class="footright">
+                       <p>Copyright &copy; 2015 <a href="http://csdesign.co.nf/">CS Design</a></p>
+                    </div>
+                 </div>
             </footer>
-     </div>
+    
 </body>
 </html>
