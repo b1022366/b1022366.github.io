@@ -35,7 +35,7 @@ h3{
 	font-family: 'Poiret One', cursive;
 	font-size:1.4em;
 	font-weight:800;
-	color:#000;
+	color:#FFF;
 }
 
 p{
@@ -219,6 +219,10 @@ main{
 	float:left;
 	padding:5px;
 	border-radius:2px;
+}
+
+.eventblock h3{
+	color:#000;
 }
 
 .eventdetailcont{
