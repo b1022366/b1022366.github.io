@@ -45,6 +45,7 @@ p{
 a{
 	color:#FFF;
 	text-decoration:none;
+	font-weight:500;
 }
 
 a:hover{
@@ -62,25 +63,123 @@ a:hover{
 	position:relative;
 }
 .slidecontainer{
+	min-width:200px;
+	width:100%;
+	height:auto;
 	background-color:#F00;
-	height:700px;
 }
 
 .catcontainer{
 	width:auto;
 	margin:auto;
+	position:relative;
+	top:30px;
 }
 
 .cat{
-	width:50%;
+	min-width:200px;
+	width:100%;
+	min-height:300px;
+	height:auto;
 	margin:auto;
-	float:left;
-	background-color:#FF0;
-	height:10em;
+	margin-top:10px;
+	position:relative;
+	top:0;
 }
 
-.catdesc{
-	
+.cat p{
+	color:#FFF;
+}
+
+.catdecleft1{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	border-left:5px solid #90C;
+}
+
+.catdecright2{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	border-right:5px solid #0F0;
+}
+
+.catdecleft3{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	border-left:5px solid #FF0;
+}
+
+.catdecright4{
+	min-width:120px;
+	width:40%;
+	min-height:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:5px;
+	background:rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	border-right:5px solid #F00;
+}
+.catdecleft1:hover{
+	border-left:10px solid #90C;
+	background:rgba(0, 0, 0, 0.6);
+	width:40%;
+}
+
+.catdecright2:hover{
+	border-right:10px solid #0F0;
+	background:rgba(0, 0, 0, 0.6);
+	width:40%;
+}
+
+.catdecleft3:hover{
+	border-left:10px solid #FF0;
+	background: rgba(0, 0, 0, 0.6);
+	width:40%;
+}
+
+.catdecright4:hover{
+	border-right:10px solid #F00;
+	background:rgba(0, 0, 0, 0.6);
+	width:40%;
+}
+
+.catlink{
+	position:absolute;
+	bottom:20px;
+	right:30px;
+	padding:5px;
+}
+
+.catlink a{
+	color:#00a8ef;
+	font-weight:800
 }
 
 .eventheader{
@@ -331,6 +430,37 @@ label{
 	color:#000;
 }
 
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 /******* /Contact *******/
 .contactdesc{
 	margin-left:40px;
