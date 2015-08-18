@@ -83,7 +83,7 @@ a:hover{
 	min-height:300px;
 	height:auto;
 	margin:auto;
-	margin-top:10px;
+	margin-top:40px;
 	position:relative;
 	top:0;
 }
@@ -477,7 +477,6 @@ label{
 }
 
 textarea{
-	min-width:200px;
 	width:90%;
 	min-height:200px; 
 	resize:vertical; 
@@ -491,7 +490,6 @@ label{
 .formfield{
 	border-radius:5px;
 	font-size:0.8em;
-	min-width:200px;
 	width:90%;
 }
 
@@ -519,7 +517,7 @@ label{
 	width:100%;
 	background-color:#333;
 	min-height:2em;
-	position:relative;
+	position:fixed;
 	bottom:0;
 }
 
