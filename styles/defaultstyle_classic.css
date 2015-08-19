@@ -530,7 +530,7 @@ label{
 /******* /Footer *******/
 
 footer{
-	position:relative;
+	position:fixed;
 	bottom:0;
 	width:100%;
 }
@@ -556,9 +556,9 @@ footer{
 }
 
 .footright{
-	position:absolute;
+	position:fixed;
 	right:20px;
-	width:auto;
+	bottom:5px;
 }
 
 .footright p{
